@@ -6,7 +6,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}));
 
 app.use((req,res)=>{
-    res.send('hello world')
+    res.send('<a href="/fkk">goto</a>')
 })
 app.use('/fkk',router)
 
