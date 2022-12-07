@@ -8,7 +8,7 @@ app.use(express.urlencoded({extended:true}));
 app.use((req,res)=>{
     res.send('hello world')
 })
-app.use('/',router)
+app.use('/fkk',router)
 
 app.listen(port,()=>{
     console.log(`server running on port ${port}`);
