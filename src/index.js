@@ -5,6 +5,9 @@ const port =process.env.port || 3003
 app.use(express.json())
 app.use(express.urlencoded({extended:true}));
 
+app.use((req,res)=>{
+    res.send('hello world')
+})
 app.use('/',router)
 
 app.listen(port,()=>{
